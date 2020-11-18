@@ -1,4 +1,5 @@
-import json, requests, folium
+import folium
+import requests
 
 print("Loading data...")
 apiurl = 'https://opendata.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0.geojson'
