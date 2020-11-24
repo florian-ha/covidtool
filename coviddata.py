@@ -14,6 +14,6 @@ print("Finished downloading!")
 
 df = pd.read_csv('data.csv')
 df.sort_values(by=['cases7_per_100k'],inplace=True ,ascending=False)
-casesandnames = df[['GEN','BEZ','cases7_per_100k']]
+casesandnames = df[['GEN','BEZ','BL','cases7_per_100k']]
 print(casesandnames)
 casesandnames.to_excel(r'casesandnames.xlsx', index=False)
