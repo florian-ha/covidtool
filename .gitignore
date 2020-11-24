@@ -4,3 +4,7 @@
 .idea/
 covidenv/
 macenv/
+data.csv
+Pipfile
+Pipfile.lock
+.vscode/
