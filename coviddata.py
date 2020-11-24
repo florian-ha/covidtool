@@ -2,6 +2,7 @@
 
 import pandas as pd
 import requests
+import openpyxl
 
 print("Starting download of data...")
 csvurl = 'https://opendata.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0.csv'
@@ -13,5 +14,6 @@ print("Finished downloading!")
 
 df = pd.read_csv('data.csv')
 df.sort_values(by=['cases7_per_100k'],inplace=True ,ascending=False)
-
-print(df)
+casesandnames = df[['GEN','BEZ','cases7_per_100k']]
+print(casesandnames)
+casesandnames.to_excel(r'casesandnames.xlsx', index=False)
