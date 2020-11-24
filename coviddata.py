@@ -13,6 +13,7 @@ with open('data.csv', 'wb') as f:
 print("Finished downloading!")
 
 df = pd.read_csv('data.csv')
+df.to_excel(r'data.xlsx', index=False)
 df.sort_values(by=['cases7_per_100k'],inplace=True ,ascending=False)
 casesandnames = df[['GEN','BEZ','BL','cases7_per_100k']]
 print(casesandnames)
