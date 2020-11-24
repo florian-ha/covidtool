@@ -8,3 +8,4 @@ data.csv
 Pipfile
 Pipfile.lock
 .vscode/
+.DS_STORE
