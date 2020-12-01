@@ -23,3 +23,4 @@ casesandnames = df[['GEN', 'BEZ', 'BL', 'cases7_per_100k']]
 print(casesandnames)
 # Saves the casesandnames Dataframe into casesandnames.xlsx
 casesandnames.to_excel(r'casesandnames.xlsx', index=False)
+print("Saved data to casesandnames.xlsx")
